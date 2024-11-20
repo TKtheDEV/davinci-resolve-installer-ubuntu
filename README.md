@@ -3,6 +3,6 @@
 ## This installs the missing libraries and copies libraries into the Davinci DIR
 
 ```bash
-wget https://github.com/TKtheDEV/davinci-resolve-installer-ubuntu/blob/main/TK_resolve_installer.sh && chmod +x TK_resolve_installer.sh && ./TK_resolve_installer.sh
+wget https://raw.githubusercontent.com/TKtheDEV/davinci-resolve-installer-ubuntu/refs/heads/main/TK_resolve_installer.sh && chmod +x TK_resolve_installer.sh && ./TK_resolve_installer.sh
 ```
 Requires Sudo!
