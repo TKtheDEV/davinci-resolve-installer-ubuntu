@@ -27,7 +27,7 @@ echo "Detected version: $VERSION"
 
 # Unzip the package
 echo "Unzipping $ZIP_FILE..."
-unzip -o "$ZIP_FILE" -d "$DOWNLOADS_DIR/${PACKAGE_NAME}_${VERSION}_Linux"
+unzip -o "$ZIP_FILE" -d "$INSTALLER_DIR"
 
 # Install dependencies
 echo "Installing required dependencies..."
