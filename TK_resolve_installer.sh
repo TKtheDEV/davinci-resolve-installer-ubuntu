@@ -53,4 +53,8 @@ for lib in libgio-2.0.so.0 libgmodule-2.0.so.0 libglib-2.0.so.0; do
     fi
 done
 
+# Cleaning up but leaving the zip file in place
+echo "Cleaning Up..."
+rm -r "$INSTALLER_DIR"
+
 echo "All done! You can open Resolve now. Have fun! ~TKtheDEV"
