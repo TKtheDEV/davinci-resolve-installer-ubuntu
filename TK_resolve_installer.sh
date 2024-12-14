@@ -18,7 +18,7 @@ if [[ -z "$ZIP_FILE" ]]; then
 fi
 
 # Extract version number from the ZIP filename
-VERSION=$(echo "$ZIP_FILE" | grep -oP '(?<=DaVinci_Resolve_)\d+\.\d+' || echo "unknown")
+VERSION=$(echo "$ZIP_FILE" | grep -oP '(?<=DaVinci_Resolve_)\d+\.\d+(\.\d+)?' || echo "unknown")
 INSTALLER_DIR="$DOWNLOADS_DIR/${PACKAGE_NAME}_${VERSION}_Linux"
 INSTALLER_RUN="$INSTALLER_DIR/${PACKAGE_NAME}_${VERSION}_Linux.run"
 
