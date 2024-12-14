@@ -10,7 +10,7 @@ LIB_PATH="/usr/lib/x86_64-linux-gnu"
 RESOLVE_LIBS_PATH="/opt/resolve/libs"
 
 # Auto-detect the ZIP file
-ZIP_FILE=$(find "$DOWNLOADS_DIR" -maxdepth 1 -type f -name "${PACKAGE_NAME}_*_Linux.zip" | head -n 1)
+ZIP_FILE=$(find "$DOWNLOADS_DIR" -maxdepth 1 -type f -name "${PACKAGE_NAME}_*_Linux.zip" | sort -V | tail -n 1)
 
 if [[ -z "$ZIP_FILE" ]]; then
     echo "Error: No DaVinci Resolve ZIP file found in $DOWNLOADS_DIR."
