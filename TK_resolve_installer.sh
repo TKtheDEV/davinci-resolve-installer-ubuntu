@@ -31,7 +31,7 @@ unzip -o "$ZIP_FILE" -d "$INSTALLER_DIR"
 
 # Install dependencies
 echo "Installing required dependencies..."
-sudo apt update && sudo apt install -y libapr1t64 libaprutil1t64 libxcb-composite0 libxcb-xinerama0 libfuse2
+sudo apt update && sudo apt install -y libapr1t64 libaprutil1t64 libxcb-composite0 libxcb-xinerama0 libfuse2 libqt6core6
 
 # Check if the installer exists
 if [[ ! -f "$INSTALLER_RUN" ]]; then
