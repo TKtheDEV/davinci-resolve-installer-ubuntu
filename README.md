@@ -1,4 +1,4 @@
-# Installer for Davinci Resolve on Ubuntu 24.10
+# Installer for Davinci Resolve on Ubuntu 24.10 and 25.04
 ### (probably works on older version too)
 ### This installs the missing libraries, runs the resolve installer and copies libraries into the Davinci DIR
 
@@ -11,4 +11,4 @@ Root privileges (Sudo)
 ```bash
 wget https://raw.githubusercontent.com/TKtheDEV/davinci-resolve-installer-ubuntu/refs/heads/main/TK_resolve_installer.sh && chmod +x TK_resolve_installer.sh && ./TK_resolve_installer.sh && rm ./TK_resolve_installer.sh
 ```
-
+### If you run into any issues, feel free to open an issue and I'll have a look.
